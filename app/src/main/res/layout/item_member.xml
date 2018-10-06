@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:orientation="vertical">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView android:id="@+id/tv_name" android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:textStyle="bold"
+                      android:text="Name"
+                      android:textColor="#000000"
+                      android:textSize="16sp"/>
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_arrow_forward_black_24dp"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_party" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Party"
+                  android:textColor="#000000"
+                  android:textSize="16sp"/>
+
+
+        <TextView android:id="@+id/tv_email" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="E-mail"
+                  android:textColor="#000000"
+                  android:textSize="16sp"/>
+
+        <TextView android:id="@+id/tv_website" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Website"
+                  android:textColor="#000000"
+                  android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detail"
+    android:orientation="vertical"
+    tools:context=".detail">
+
+    <ImageButton android:id="@+id/btn_back" android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:background="#00000000"
+                 android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="0dp"/>
+
+            <TextView android:id="@+id/tv_name" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="16dp"
+                      android:text="Name"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+
+
+            <TextView android:id="@+id/tv_party" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:text="Party"
+                      android:textSize="20sp"/>
+
+            <TextView android:id="@+id/tv_ends" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:text="Current Term Ends:"
+                      android:textSize="16sp"/>
+
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="10dp"
+                          android:gravity="center"
+                          android:layout_marginLeft="16dp"
+                          android:layout_marginRight="16dp"
+                          android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:text="Website:"
+                          android:textSize="16sp"
+                          android:textStyle="bold"/>
+
+                <TextView android:id="@+id/tv_election" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:autoLink="web"
+                          android:layout_marginLeft="5dp"
+                          android:text="Website:"
+                          android:textSize="16sp"
+                          android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="10dp"
+                          android:gravity="center"
+                          android:layout_marginLeft="16dp"
+                          android:layout_marginRight="16dp"
+                          android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:text="Contact form:"
+                          android:textSize="16sp"
+                          android:textStyle="bold"/>
+
+                <TextView android:id="@+id/tv_form" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:autoLink="web"
+                          android:layout_marginLeft="5dp"
+                          android:text="Website:"
+                          android:textSize="16sp"
+                          android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:text="Committees"
+                      android:textSize="16sp"
+                      android:textStyle="bold"/>
+
+            <TextView android:id="@+id/tv_committees" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginRight="16dp"
+                      android:gravity="center"
+                      android:text="Committees"
+                      android:textSize="16sp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="10dp"
+                      android:text="Recent Bills:"
+                      android:textSize="16sp"
+                      android:textStyle="bold"/>
+
+            <TextView android:id="@+id/tv_bills" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginRight="16dp"
+                      android:gravity="center"
+                      android:text="Recent Bills:"
+                      android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

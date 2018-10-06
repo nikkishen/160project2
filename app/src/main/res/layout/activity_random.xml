@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:alpha="0.7"
+              android:background="@drawable/purple2"
+              android:orientation="vertical"
+              tools:context=".location">
+
+    <ImageButton android:id="@+id/btn_back" android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:background="#00000000"
+                 android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/dice"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:text="In this Random Location" android:textColor="#000000"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+
+    <TextView android:id="@+id/tv_random" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:textColor="#000000"
+              android:textSize="18sp"
+              android:textStyle="bold"/>
+
+    <ListView android:id="@+id/lv" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="16dp"
+              android:layout_marginTop="16dp"
+              android:divider="@null"
+              android:dividerHeight="10dp"/>
+
+</LinearLayout>
